@@ -1,0 +1,66 @@
+.keresztezodes {
+    background: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 200px auto;
+    grid-template-rows: 40% 20% auto;
+}
+.ut {
+    background: lightgray;
+}
+img {
+    width: 100px;
+}
+.forgalom {
+    position: relative;
+}
+.auto {
+/*helyezd el az autót a lámpa alatt az úttesten!*/
+
+}
+.lampa {
+    position: absolute;
+    width: 20px;
+    height: 70px;
+    background: rgb(27, 26, 26);
+    border-radius: 8px;
+    top: calc(40% - 100px);
+    left: calc(30% - 40px);
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.lampa div {
+    border-radius: 9px;
+    /* background-color: lavender; */
+}
+.piros {
+    background: rgb(146, 35, 35);
+}
+.sarga {
+    background: rgb(230, 196, 84);
+}
+.zold {
+    background: rgb(59, 190, 47);
+}
+.balroljobbra {
+    /*https://webiskola.hu/css-ismeretek/css-animacio-animation-keszitese/*/
+    animation-name: animacio;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    /* animation-delay: 2s;*/
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes animacio {
+    from {
+        left: calc(30% - 100px);
+    }
+    to {
+        left: 100%;
+    }
+}
